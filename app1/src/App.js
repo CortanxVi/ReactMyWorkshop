@@ -12,11 +12,17 @@ function App() {
     </div>
   );
 
+  const h1Style = {
+    backgroundColor: 'cyan',
+    textAlign: 'Center',
+    color: 'red',
+    fontSize: 'larger',
+    padding: '3px',
+  };
+
   return (
     <div>
-      {/* <img src={logo} alt="this is logoEiEi" /> */}
-      <h1>Hello world <br />My name is Brian</h1>
-      <h3>{el}</h3>
+      <h1 style={h1Style}>Hello React</h1>
     </div>
   );
 }
