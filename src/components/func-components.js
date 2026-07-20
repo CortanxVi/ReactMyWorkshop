@@ -28,6 +28,7 @@ export function Content(){
     );
 }
 
+// Footer เป้นตัวแปรที่ถูกมองเป็นชื่อฟังก์ชัน
 export const Footer = () => {
     return(
         <div style={{textAlign: 'center'}}>
