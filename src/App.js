@@ -1,15 +1,14 @@
-import React from 'react';
-import { Calculator2 } from './calculator';
-import { EventData2 } from './event-data';
-import RefsFunc from './refs-func';
-import RefsArray from './refs-array';
-import StateFunc from './state-func';
-import Effect from './effect';
+import React from 'react'
+import {userContext} from './context'
+import Header2 from './context-header2'
+import Context2 from './context-content2'
 
-function App() {
-  return ( 
-    <Effect/>
-  );
+export default function App(){
+  let [user, setUser] = React.useState('')
+  return (
+    <userContext.Provider value={[user, setUser]}>
+      <Header2 />
+      <Content2 />
+    </userContext.Provider>
+  )
 }
-
-export default App;
